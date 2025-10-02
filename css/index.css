@@ -53,7 +53,6 @@ nav ul li a {
 }
 
 .navbar a:hover {
-  /* color: #4c8f3a; */
   color: #fffffc;
 }
 
@@ -63,10 +62,6 @@ nav ul li a {
   position: relative;
   overflow: hidden;
 }
-
-/* .home_container:hover {
-  opacity: 0.2;
-} */
 
 .imgHome {
   width: 100%;
