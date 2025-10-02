@@ -4,19 +4,27 @@
   box-sizing: border-box;
   list-style: none;
 }
+
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Poppins", sans-serif;
   background: #f8f8f8;
   color: #000;
 }
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #98df85;
+  height: 80px;
 }
+
+.logo {
+  height: 80px;
+}
+
 .imgLogo {
-  width: 140px;
+  height: 80px;
 }
 
 nav ul {
@@ -27,12 +35,21 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: #1d4a17;
-  font-size: 20px;
+  font-size: 1.25rem;
   padding: 8px;
 }
+
+.navbar a {
+  transition: 0.4s;
+}
+
+.navbar > ul > li:last-child {
+  padding-right: 20px;
+}
+
 .navbar a:hover {
-  color: #4c8f3a;
-  transition: 0.3s;
+  /* color: #4c8f3a; */
+  color: #fffffc;
 }
 
 .home {
@@ -46,11 +63,11 @@ nav ul li a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: opacity 0.6s ease;
 }
 
 .imgHome:hover {
-  opacity: 0.1;
-  transition: opacity 0.5s ease;
+  opacity: 0.2;
 }
 
 .textoHome {
@@ -86,7 +103,7 @@ nav ul li a {
 
 .guias div {
   flex: 1;
-  background: #fff;
+  background: #fffffc;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -141,21 +158,39 @@ nav ul li a {
 
 .footer {
   background: #98df85;
-  color: #fff;
-  padding: 20px;
+  color: #fffffc;
+  padding: 20px 0px;
   text-align: center;
+  font-size: 1rem;
+}
+
+.infoContatos p a {
+  text-decoration: none;
+  color: #fffffc;
+  transition: 0.8s;
+}
+
+.infoContatos p a:hover {
+  color: #1d4a17;
 }
 
 .redesSociais {
-  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.redesSociais svg {
+  width: 100%;
+  height: 40px;
 }
 
 .redesSociais a {
-  color: #000000;
-  margin: 0 10px;
-  text-decoration: none;
+  transition: 0.4s;
 }
 
 .redesSociais a:hover {
-  text-decoration: underline;
+  transform: translateY(-5px);
 }
